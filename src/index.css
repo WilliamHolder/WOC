@@ -1,13 +1,258 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+p, h1, h2, h3, h4, h5, h6, a, li, button {
+  font-family: 'Montserrat', sans-serif;
 }
+
+.nav-link {
+  font-size: 13px;
+}
+
+#root {
+  background-image: url("assets/background.jpg");
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+nav, .recipe-main .section {
+  background-color: #fff;
+}
+/*
+.container {
+  display: flex;
+}
+
+.half {
+  width: 50%;
+}*/
+
+.header img {
+  box-shadow: 0 1px 15px 2px rgba(0,0,0,0.15);
+}
+
+.container-fluid.recipe-header, .container-fluid.recipe-main {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header {
+  background-color: beige/* #9fd9ea;*/;
+  padding: 2% 5%;
+}
+
+.recipe-page, .homepage, .homepage-recipes {
+  background-color: #fff;
+  padding: 2% 5%;
+}
+
+.recipe-page-item {
+  flex: 1 0 30%;
+  margin: 2% auto;
+}
+
+.footer {
+  background-color: #9fd9ea;
+}
+
+.footer-row {
+  align-items: center;
+  min-height:150px;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer ul li {
+  margin: auto 5%;
+}
+
+@media(min-width: 1100px) {
+  .section, .homepage {
+    max-width: 80%;
+    margin: auto;
+  }
+  nav {
+    width: 80%;
+    margin: auto;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .footer {
+    width: 80%;
+    margin: auto;
+    border-radius: 0 0 15px 15px;
+  }
+
+  .homepage-header, .homepage-recipes {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.homepage {
+  border-bottom: 2px solid #9fd9ea;
+}
+
+.homepage-section {
+  background-color: #e7e7e7;
+  padding: 5%;
+  border-radius: 3%;
+  text-align: center;
+}
+
+.homepage-section li {
+  text-align: left;
+}
+
+.homepage-header {
+  padding: 3%;
+  background-color: #9fd9ea;
+}
+
+.homepage-recipe-section-item {
+  padding: 0 5%;
+}
+
+.recipe-info {
+  /*align-items: center;*/
+}
+
+.recipe-info > div {
+  display: flex;
+  align-items: center;
+}
+
+.recipe-info p {
+  margin: 0;
+  margin-left: 5%;
+  font-size: 11px;
+}
+
+.author {
+  font-size: 13px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.description {
+  margin: 5% auto;
+}
+
+.nutrition {
+  max-width: 70%;
+  margin-left: 2%;
+}
+
+.nutrition-name {
+  border-radius: 5px 5px 0 0;
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.nutrition-value {
+  border-radius: 0 0 5px 5px;
+  background-color: #36b0d37a;
+  text-align: center;
+}
+
+.nutrition-item {
+  padding-left: 2px!important;
+  padding-right: 2px!important;
+  font-size: 11px;
+}
+
+.recipe-method-section {
+  padding: 3%;
+}
+
+.navbar-brand {
+  flex: auto;
+}
+
+.navbar-brand img {
+  padding: 5%;
+}
+
+.btn.blue-btn {
+  background-color: #36b0d3;
+}
+
+.btn.search-btn {
+  border-radius: 0 5px 5px 0;
+}
+
+.search-form input, .btn.search-btn {
+  border: 1px solid #36b0d3;
+}
+
+.search-form input {
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+}
+
+.ingredient-list ul {
+  padding-left: 0;
+}
+
+.ingredient-list {
+  border: 1px solid #e5e5e5;
+  padding: 2% 5%;
+}
+
+.ingredients ul li:nth-child(even) {
+  background-color: #36b0d37a;
+}
+
+.ingredients ul li:nth-child(odd) {
+  background-color: #fff;
+}
+
+.ingredients ul li {
+  list-style: none;
+  padding: 1.5%;
+}
+
+.shopping-list-btn {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.recipe-page-author, .recipe-page-difficulty {
+  font-size: calc(10px + 0.2vw);
+}
+.recipe-page-name {
+  font-weight: bold;
+}
+
+.recipe-page-author, .recipe-page-difficulty, .recipe-page-name {
+  display: block;
+}
+
+.recipe-page-image {
+  border-radius: 5px;
+  padding: 2%;
+}
+
+/* dropdown menu styles */
+#navbarSupportedContent {
+  position: relative;
+}
+
+.dropdown-menu {
+  right: 0;
+  width: max-content;
+}
+
